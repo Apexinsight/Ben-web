@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessed Ben | ICT Specialist & Full-Stack Developer</title>
+    <meta name="description" content="Blessed Ben is a BSc ICT student, ICT support specialist, graphic designer, online marketer, and full-stack developer based in Nairobi, Kenya.">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <nav id="navbar">
+        <div class="container nav-wrapper">
+            <a class="logo" href="#home">BLESSED BEN<span>.</span></a>
+            <div class="nav-controls">
+                <button type="button" onclick="toggleTheme()" class="icon-btn" aria-label="Toggle theme">
+                    <i data-lucide="sun" id="theme-icon"></i>
+                </button>
+                <button type="button" class="menu-trigger" onclick="toggleMenu()" aria-label="Open menu">
+                    <span id="menu-text">MENU</span>
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-overlay" id="menu">
+        <button type="button" class="close-menu" onclick="toggleMenu()" aria-label="Close menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+        <a href="#skills" onclick="toggleMenu()">Skills</a>
+        <a href="#experience" onclick="toggleMenu()">Experience</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <hr>
+        <div class="social-sidebar">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social-link"><i data-lucide="linkedin"></i> LinkedIn - Blessed Ben</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer" class="social-link"><i data-lucide="github"></i> GitHub - Blessed Ben</a>
+        </div>
+    </div>
+
+    <header class="hero-section" id="home">
+        <div class="container hero-grid">
+            <div class="hero-image hero-image-first">
+                <div class="image-border">
+                    <img src="images/mypic.jpeg" alt="Blessed Ben">
+                </div>
+                <div class="floating-card stat-card one">
+                    <strong>12+</strong>
+                    <span>Responsive websites built</span>
+                </div>
+                <div class="floating-card stat-card two">
+                    <strong>60%</strong>
+                    <span>Manual work reduced with ERP</span>
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="eyebrow">ICT Specialist, Designer, Marketer</p>
+                <h1 class="hero-title">Engineering <span id="typewriter" class="type-accent">digital systems</span><br>that help people work better.</h1>
+                <p class="hero-subtitle">
+                    Blessed Ben is a BSc ICT student at KCA University, an ICT Support Assistant at Sky View School,
+                    and a founder building <span class="text-highlight">full-stack products</span>, <span class="text-highlight">ERP systems</span>, and digital solutions for modern teams.
+                </p>
+                <div class="hero-badges">
+                    <span>ERP Builder</span>
+                    <span>Network Support</span>
+                    <span>Graphic Design</span>
+                    <span>Digital Marketing</span>
+                </div>
+                <div class="hero-meta">
+                    <span><i data-lucide="map-pin"></i> Nairobi, Kenya</span>
+                    <span><i data-lucide="phone"></i> 0745670521</span>
+                    <span><i data-lucide="mail"></i> blessedbenwork@gmail.com</span>
+                </div>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn-primary">Start a Project</a>
+                    <a href="#portfolio" class="btn-secondary">View Portfolio</a>
+                </div>
+                <div class="motion-strip" aria-hidden="true">
+                    <div class="motion-track">
+                        <span>Brand Design</span>
+                        <span>ERP Development</span>
+                        <span>Network Maintenance</span>
+                        <span>Web Design</span>
+                        <span>Social Media Graphics</span>
+                        <span>ICT Support</span>
+                        <span>Brand Design</span>
+                        <span>ERP Development</span>
+                        <span>Network Maintenance</span>
+                        <span>Web Design</span>
+                        <span>Social Media Graphics</span>
+                        <span>ICT Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div>
+                <h2 class="section-title left">Professional Summary</h2>
+                <p class="lead">
+                    Versatile ICT undergraduate skilled in full-stack web development, networking, digital design,
+                    and system implementation. Founder of BaseStack, delivering ERP and web-based solutions that
+                    improve business operations. I enjoy solving real problems with practical, scalable digital tools.
+                </p>
+            </div>
+            <div class="profile-stack">
+                <div class="profile-showcase">
+                    <div class="image-border profile-frame">
+                        <img src="images/mypic.jpeg" alt="Blessed Ben profile picture">
+                    </div>
+                    <div class="profile-copy">
+                        <span class="portfolio-tag">Profile Spotlight</span>
+                        <h3>Blessed Ben</h3>
+                        <p>ICT Specialist, Full-Stack Developer, Designer and Digital Marketer based in Nairobi.</p>
+                        <div class="hero-badges compact">
+                            <span>Creative</span>
+                            <span>Reliable</span>
+                            <span>Technical</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-points">
+                    <div class="mini-card">
+                        <i data-lucide="graduation-cap"></i>
+                        <div>
+                            <h3>KCA University</h3>
+                            <p>BSc Information Communication Technology, 2024-2027</p>
+                        </div>
+                    </div>
+                    <div class="mini-card">
+                        <i data-lucide="briefcase-business"></i>
+                        <div>
+                            <h3>Sky View School</h3>
+                            <p>ICT Support Assistant, Graphic Designer, Online Marketer</p>
+                        </div>
+                    </div>
+                    <div class="mini-card">
+                        <i data-lucide="rocket"></i>
+                        <div>
+                            <h3>BaseStack</h3>
+                            <p>Founder & developer of ERP and web-based solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <i data-lucide="layers-3" class="card-icon"></i>
+                    <h3>Logo Design</h3>
+                    <p>Distinct, memorable logos that help brands stand out and stay consistent across platforms.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="badge-percent" class="card-icon"></i>
+                    <h3>Branding</h3>
+                    <p>Visual identity systems, color direction, and brand assets that create a strong first impression.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="share-2" class="card-icon"></i>
+                    <h3>Social Media Designs</h3>
+                    <p>Clean, high-impact graphics for posts, stories, promos, and campaign content.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="megaphone" class="card-icon"></i>
+                    <h3>Flyers and Posters</h3>
+                    <p>Event and promotional artwork designed to communicate quickly and look polished.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="credit-card" class="card-icon"></i>
+                    <h3>Business Cards</h3>
+                    <p>Professional business cards that match your brand and leave a lasting impression.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="code-xml" class="card-icon"></i>
+                    <h3>Basic Web Design</h3>
+                    <p>Simple, responsive websites for portfolios, small businesses, and personal branding.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="layout-grid" class="card-icon"></i>
+                    <h3>ERP Systems</h3>
+                    <p>Custom ERP solutions that reduce manual work, improve workflow, and centralize operations.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="router" class="card-icon"></i>
+                    <h3>Network Maintenance</h3>
+                    <p>Ongoing network support, troubleshooting, and maintenance to keep systems stable and reliable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <article class="portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/portfolio-school.jpg" alt="BaseStack ERP project preview">
+                        <div class="portfolio-overlay">
+                            <span>Development Stack</span>
+                            <p>Code-focused ERP building and software logic</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">ERP System</span>
+                        <h3>BaseStack ERP System</h3>
+                        <p>Business workflow and records platform focused on efficiency and clean operations.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/school-erp-ui.svg" alt="School ERP login screen preview">
+                        <div class="portfolio-overlay">
+                            <span>School ERP</span>
+                            <p>University management login and role selection</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Web App</span>
+                        <h3>School Management ERP</h3>
+                        <p>Responsive school management platform for roles, access, and daily operations.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/portfolio-branding.jpg" alt="Branding and social media assets preview">
+                        <div class="portfolio-overlay">
+                            <span>Brand & Social</span>
+                            <p>Social media mockups and brand strategy visuals</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Design</span>
+                        <h3>Branding and Social Media Assets</h3>
+                        <p>Branding concepts, social media mockups, and creative campaign visuals.</p>
+                    </div>
+                </article>
+                <article class="portfolio-card">
+                    <div class="portfolio-media">
+                        <img src="images/portfolio-website.jpg" alt="Personal and business website preview">
+                        <div class="portfolio-overlay">
+                            <span>Web Development</span>
+                            <p>Code-led website building and debugging</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-tag">Website</span>
+                        <h3>Personal and Business Websites</h3>
+                        <p>Modern responsive websites built for strong online presence and clear communication.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid skills-cards">
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>Full-Stack Development</h3>
+                    <p>I build practical web apps that connect clean interfaces with functional business logic.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>Frontend Development</h3>
+                    <p>I create responsive, modern interfaces that feel smooth on desktop and mobile screens.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>UI/UX Design</h3>
+                    <p>I focus on clarity and user flow so people can use systems without confusion.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>Graphic Design</h3>
+                    <p>I design brand visuals, social media content, posters, and marketing material that look polished.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>ERP Systems</h3>
+                    <p>I build ERP solutions that help organize records, reduce manual work, and improve operations.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>Networking</h3>
+                    <p>I help configure and maintain reliable network setups that keep people connected and productive.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>ICT Support</h3>
+                    <p>I troubleshoot hardware, software, and connectivity issues with a calm and practical approach.</p>
+                </div>
+                <div class="skill-card skill-featured">
+                    <p class="skills-kicker">What I bring to a team</p>
+                    <h3>Digital Marketing</h3>
+                    <p>I support online visibility through social content, campaign visuals, and brand-focused promotion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience, Education and Highlights</h2>
+            <div class="timeline-item">
+                <span class="date-badge">06/2024 - Present</span>
+                <h3>ICT Support Assistant, Sky View Academy</h3>
+                <p>Provided technical support for hardware, software, and network issues while assisting with maintenance and user support.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date-badge">09/2024 - Present</span>
+                <h3>BSc ICT, KCA University</h3>
+                <p>Pursuing software development, networking, database management, system analysis, and digital solutions.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="date-badge">2024 - Present</span>
+                <h3>Graphic Designer and Online Marketer</h3>
+                <p>Creating visual content, social media materials, and marketing assets for school and business use.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Languages, Awards and Interests</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <i data-lucide="languages" class="card-icon"></i>
+                    <h3>Languages</h3>
+                    <p>Fluent in English and Kiswahili with strong written and verbal communication skills.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="award" class="card-icon"></i>
+                    <h3>Awards</h3>
+                    <p>Career Ambassador Recognition and Hackathon participation for leadership and innovation.</p>
+                </div>
+                <div class="card">
+                    <i data-lucide="heart-handshake" class="card-icon"></i>
+                    <h3>Interests</h3>
+                    <p>Technology trends, coding, networking concepts, web applications, and lawn tennis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title left">Let's Work Together</h2>
+                <p class="lead">
+                    Need design support, a business website, or help with ICT systems? Reach out through any of the options below.
+                </p>
+                <div class="contact-links">
+                    <a href="tel:+254745670521" class="social-link"><i data-lucide="phone"></i> 0745670521</a>
+                    <a href="mailto:blessedbenwork@gmail.com" class="social-link"><i data-lucide="mail"></i> blessedbenwork@gmail.com</a>
+                    <a href="https://wa.me/254745670521?text=Hello%20Blessed%20Ben,%20I%20would%20like%20to%20work%20with%20you." target="_blank" rel="noreferrer" class="social-link"><i data-lucide="message-circle"></i> Chat on WhatsApp</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" class="social-link"><i data-lucide="linkedin"></i> LinkedIn - Blessed Ben</a>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" class="social-link"><i data-lucide="github"></i> GitHub - Blessed Ben</a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contact-form" action="contact.php" method="post">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" name="subject" placeholder="Project or inquiry topic" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me what you need..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width" id="submit-btn">Send Message</button>
+                    <div id="form-status" class="form-status" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Blessed Ben. ICT Specialist & Full-Stack Developer.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Branding and social media assets preview">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#g3)"/>
+  <rect x="100" y="110" width="1000" height="580" rx="36" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+  <rect x="160" y="170" width="280" height="280" rx="34" fill="rgba(255,255,255,0.14)"/>
+  <rect x="480" y="170" width="560" height="84" rx="24" fill="rgba(255,255,255,0.14)"/>
+  <rect x="480" y="286" width="560" height="84" rx="24" fill="rgba(255,255,255,0.14)"/>
+  <rect x="480" y="402" width="360" height="84" rx="24" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="300" cy="550" r="92" fill="#ffffff"/>
+  <text x="160" y="710" fill="#f8fafc" font-family="Arial, sans-serif" font-size="48" font-weight="700">Branding & Social Media Assets</text>
+</svg>
