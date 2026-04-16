@@ -47,34 +47,6 @@ function typewriterLoop() {
 
 typewriterLoop();
 
-const revealTargets = [
-    '.section-title',
-    '.mini-card',
-    '.card',
-    '.portfolio-card',
-    '.skill-featured',
-    '.timeline-item',
-    '.contact-form'
-];
-
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    },
-    { threshold: 0.18 }
-);
-
-document.querySelectorAll(revealTargets.join(', ')).forEach((el, index) => {
-    el.classList.add('reveal-on-scroll');
-    el.style.transitionDelay = `${Math.min(index * 0.03, 0.35)}s`;
-    observer.observe(el);
-});
-
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 const submitBtn = document.getElementById('submit-btn');
