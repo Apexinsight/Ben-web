@@ -813,7 +813,7 @@ body:not(.dark-mode) .profile-showcase {
         var(--panel);
     border: 1px solid rgba(53, 194, 255, 0.2);
     transform-origin: center;
-    animation: cardRise 0.9s ease both, skillPulse 7s ease-in-out infinite;
+    animation: cardRise 0.9s ease both;
 }
 
 .skill-featured::before {
@@ -825,7 +825,7 @@ body:not(.dark-mode) .profile-showcase {
     border-radius: 50%;
     background: rgba(53, 194, 255, 0.14);
     filter: blur(20px);
-    animation: drift 12s ease-in-out infinite alternate;
+    animation: none;
 }
 
 .skills-kicker {
@@ -892,12 +892,7 @@ body:not(.dark-mode) .profile-showcase {
     inset: 0;
     background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%);
     transform: translateX(-120%);
-    animation: sweep 9s ease-in-out infinite;
     pointer-events: none;
-}
-
-.skills-cards .skill-card:hover::before {
-    animation-play-state: paused;
 }
 
 .timeline-item {
@@ -1256,15 +1251,6 @@ body:not(.dark-mode) .profile-showcase {
 @keyframes titleGlow {
     0%, 100% { text-shadow: 0 0 0 rgba(53, 194, 255, 0.08); }
     50% { text-shadow: 0 0 28px rgba(53, 194, 255, 0.2); }
-}
-
-@keyframes skillPulse {
-    0%, 100% {
-        box-shadow: var(--shadow);
-    }
-    50% {
-        box-shadow: 0 24px 80px rgba(53, 194, 255, 0.18);
-    }
 }
 
 @keyframes tagPop {
