@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     else nav.classList.remove('scrolled');
 });
 
-const words = ['digital systems', 'brands', 'web apps', 'ICT solutions'];
+const words = ['secure systems', 'web apps', 'ERP platforms', 'ICT solutions'];
 let wordIndex = 0;
 let charIndex = 0;
 let deleting = false;
