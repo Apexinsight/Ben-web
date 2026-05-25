@@ -21,32 +21,6 @@ window.addEventListener('scroll', () => {
     else nav.classList.remove('scrolled');
 });
 
-const words = ['secure systems', 'web apps', 'ERP platforms', 'ICT solutions'];
-let wordIndex = 0;
-let charIndex = 0;
-let deleting = false;
-
-function typewriterLoop() {
-    const el = document.getElementById('typewriter');
-    if (!el) return;
-
-    const current = words[wordIndex];
-    if (deleting && charIndex <= 0) {
-        deleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-    } else if (!deleting && charIndex >= current.length) {
-        deleting = true;
-        setTimeout(typewriterLoop, 1300);
-        return;
-    }
-
-    el.textContent = deleting ? current.slice(0, charIndex--) : current.slice(0, charIndex++);
-
-    setTimeout(typewriterLoop, deleting ? 60 : 110);
-}
-
-typewriterLoop();
-
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
 const submitBtn = document.getElementById('submit-btn');
