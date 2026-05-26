@@ -1332,9 +1332,18 @@ body:not(.dark-mode) .profile-showcase {
     }
 
     .portfolio-media,
-    .credential-card.feature .portfolio-media,
-    .portrait-media {
+    .credential-card.feature .portfolio-media {
         aspect-ratio: 4 / 3;
+    }
+
+    .credential-card .portrait-media {
+        aspect-ratio: auto;
+    }
+
+    .credential-card .portrait-media img {
+        display: block;
+        height: auto;
+        object-fit: contain;
     }
 }
 
